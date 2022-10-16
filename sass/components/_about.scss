@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.about {
+  min-width: 320px;
+  height: 100%;
+  background-color: $bg-pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__bg-img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 44%;
+    z-index: 1;
+  }
+
+  &__head {
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 125px;
+    padding-bottom: 26px;
+    z-index: 2;
+  }
+
+  &__label {
+    position: relative;
+    font-family: $titan-one;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $main-pink;
+    padding-bottom: 15px;
+    z-index: 2;
+  }
+
+  &__title {
+    position: relative;
+    text-align: center;
+    font-family: $titan-one;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $main-red;
+    z-index: 2;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    padding-bottom: 46px;
+    z-index: 2;
+  }
+
+  &__items {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 2;
+  }
+
+  &__intro {
+    position: relative;
+    min-width: 220px;
+    font-family: $dm-sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    color: $main-black;
+    margin-bottom: 47px;
+    z-index: 2;
+  }
+
+  &__paragraph {
+    position: relative;
+    min-width: 220px;
+    font-family: $dm-sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    color: $dark-gray;
+    z-index: 2;
+  }
+
+  &__btn {
+    margin-top: 47px;
+    width: 176px;
+    height: 44px;
+    background-color: $main-white;
+    border-radius: 22px;
+    border: none;
+    font-family: $dm-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $main-red;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $btn-gray;
+    }
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+  .about {
+    min-width: 772px;
+    height: 1254px;
+
+    &__bg-img {
+      display: none;
+    }
+
+    &__head {
+      width: 440px;
+      padding-top: 130px;
+      padding-bottom: 50px;
+    }
+
+    &__label {
+      font-size: 26px;
+      line-height: 30px;
+      padding-bottom: 16px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 55px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__img {
+      width: 340px;
+      height: 339px;
+      padding: 0;
+    }
+
+    &__items {
+      padding: 50px 36px 0 17px;
+    }
+
+    &__intro {
+      max-width: 463px;
+      margin-bottom: 49px;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__paragraph {
+      max-width: 463px;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__btn {
+      margin-top: 62px;
+    }
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1024px) {
+  .about {
+    width: 1280px;
+    height: 1383px;
+    margin: 0 auto;
+
+    &__bg-img {
+      display: block;
+      top: 25%;
+    }
+
+    &__head {
+      width: 534px;
+      padding-top: 125px;
+      padding-bottom: 55px;
+    }
+
+    &__label {
+      font-size: 30px;
+      line-height: 34px;
+      padding-bottom: 15px;
+    }
+
+    &__title {
+      font-size: 58px;
+      line-height: 66px;
+    }
+
+    &__img {
+      width: 516px;
+      height: 516px;
+    }
+
+    &__items {
+      padding: 55px 115px 0 74px;
+    }
+
+    &__intro {
+      width: 463px;
+      height: 79px;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 35px;
+    }
+
+    &__paragraph {
+      width: 463px;
+      height: 155px;
+      font-size: 14px;
+      line-height: 27px;
+    }
+
+    &__btn {
+      margin-top: 45px;
+    }
+  }
+}

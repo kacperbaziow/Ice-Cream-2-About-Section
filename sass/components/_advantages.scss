@@ -1,0 +1,111 @@
+.advantages {
+  padding: 39px 70px 145px 20px;
+
+  &__title {
+    display: none;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    width: 230px;
+
+    &--padding {
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
+  }
+
+  &__desc {
+    padding-top: 16px;
+  }
+
+  &__img-title {
+    width: 98px;
+    height: 56px;
+    font-family: $titan-one;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $main-red;
+  }
+
+  &__img-text {
+    font-family: $dm-sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: $main-black;
+  }
+}
+
+// TABLET
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 66px 0;
+    margin: 0 auto;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      &--padding {
+        padding: 0;
+      }
+    }
+
+    &__desc {
+      padding-top: 36px;
+    }
+
+    &__img-title {
+      font-size: 48px;
+      line-height: 55px;
+    }
+
+    &__img-text {
+      width: 180px;
+      font-size: 14px;
+      line-height: 24px;
+      padding-top: 13px;
+    }
+  }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1024px) {
+  .advantages {
+    padding: 39px 0;
+
+    &__item {
+      width: 330px;
+      height: 222px;
+    }
+
+    &__desc {
+      padding-top: 40px;
+    }
+
+    &__img-title {
+      font-size: 58px;
+      line-height: 66px;
+    }
+
+    &__img-text {
+      width: 330px;
+      font-size: 16px;
+      line-height: 28px;
+      padding-top: 15px;
+    }
+  }
+}
